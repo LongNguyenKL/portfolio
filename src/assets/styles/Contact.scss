@@ -19,15 +19,8 @@
   }
 
   fieldset {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent !important;
   }
-
-  .MuiInputBase-input {
-    color: #050f0b; 
-  }
-
-  .MuiInputBase-root textarea {
-    color: #050f0b; 
 }
 
 label {
@@ -43,6 +36,7 @@ label {
 
 .form-flex .MuiFormControl-root {
   width: 100%;
+  color: #050f0b; 
 }
 
 form {
@@ -53,3 +47,32 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+/* Keep the input text visible */
+.MuiOutlinedInput-root {
+  background-color: white !important;
+  border-radius: 8px;
+}
+.MuiInputBase-input {
+  color: #000 !important; 
+  position: relative;
+  z-index: 1;
+}
+
+/* Label color */
+.MuiInputLabel-root {
+  transition: all 0.2s ease;
+}
+.MuiInputLabel-root.Mui-focused,
+.MuiInputLabel-root.MuiFormLabel-filled {
+  background-color: white; 
+  border-radius: 8px;       
+  padding: 0 4px;
+  color: #5a5a5a !important;           
+}
+
+/* Focus outline */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #5000ca !important;
+}
+

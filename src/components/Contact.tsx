@@ -73,7 +73,6 @@ function Contact() {
                 required
                 id="outlined-required"
                 label="Your Name"
-                placeholder="What's your name?"
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
@@ -85,7 +84,6 @@ function Contact() {
                 required
                 id="outlined-required"
                 label="Email / Phone"
-                placeholder="How can I reach you?"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
