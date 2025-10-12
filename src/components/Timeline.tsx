@@ -1,68 +1,87 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
+import Button from '@mui/material/Button';
+
 
 function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
-            <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
-            </p>
-          </VerticalTimelineElement>
-        </VerticalTimeline>
+        <h1>Background</h1>
+        <Button variant="contained" color="primary" href="https://docs.google.com/document/d/1gk1y3Y9p5vM0jv5bX1F2HjzZ4t8KXJH7/edit?usp=sharing&ouid=115820622492742329580&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '20px' }}>
+              Download Resume
+        </Button>
+        <div className="timeline-split-container" style={{maxHeight: "70vh"}}>
+          <div className="timeline-column">
+            <h3 className="work-experience-header">Work Experience</h3>
+            <VerticalTimeline layout="1-column-right">
+              {/* WORK HISTORY */}
+              <VerticalTimelineElement className="vertical-timeline-element--work">
+                <h4 className="vertical-timeline-element-subtitle">May 2025 - Dec 2025</h4>
+                <h3 className="vertical-timeline-element-title">Business Analytics Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">Vertical Bridge</h4>
+                <p>
+                  ML Predictive Modeling, Feature Engineering, EDA, GIS Analysis, Data Visualization
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement className="vertical-timeline-element--work">
+                <h4 className="vertical-timeline-element-subtitle">Jan 2024 - May 2025</h4>
+                <h3 className="vertical-timeline-element-title">Head Graduate Assistant - Data Analytics</h3>
+                <h4 className="vertical-timeline-element-subtitle">University of South Florida</h4>
+                <p>
+                  Team Leading, Statistical Modeling, Hypothesis Testing, Curriculum Design
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement className="vertical-timeline-element--work">
+                <h4 className="vertical-timeline-element-subtitle">May 2023 - Dec 2023</h4>
+                <h3 className="vertical-timeline-element-title">Social Media Analytics Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">Jabil Inc.</h4>
+                <p>
+                  Social Media Analytics, Content Audit, SWOT Analysis, KPI Evaluation, B2B Marketing Strategy, SEO
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement className="vertical-timeline-element--work">
+                <h4 className="vertical-timeline-element-subtitle">Aug 2022 - May 2023</h4>
+                <h3 className="vertical-timeline-element-title">Communications Specialist</h3>
+                <h4 className="vertical-timeline-element-subtitle">Patel College of Global Sustainability</h4>
+                <p>
+                  Social Media Management, Content Creation, Graphic Design, Event Planning, Market Outreach
+                </p>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+          </div>
+          {/* EDUCATION HISTORY */}
+          <div className="timeline-column">
+            <h3 className="education-header">Education</h3>
+            <VerticalTimeline layout="1-column-left">
+              <VerticalTimelineElement className="vertical-timeline-element--education">
+                <h4 className="vertical-timeline-element-subtitle">Jan 2024 - December 2025</h4>
+                <h3 className="vertical-timeline-element-title">M.S. in Artificial Intelligence & Business Analytics</h3>
+                <h4 className="vertical-timeline-element-subtitle">University of South Florida</h4>
+                <p>
+                  <b>GPA:</b> 3.96<br></br>
+                  <b>Relevant coursework</b>: Data Mining, Machine Learning, Data Warehousing, Advanced Database Management, 
+                  Analytical Methods for Business, Application Development for Analytics, Big Data for Business, Text Analytics / NLP. <br></br>
+                  <b>Competition</b>: 2024 Humana - Mays Healthcare Analytics Case Competition
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement className="vertical-timeline-element--education">
+                <h4 className="vertical-timeline-element-subtitle">Aug 2019 - May 2023</h4>
+                <h3 className="vertical-timeline-element-title">B.S. in Marketing - Digital Marketing</h3>
+                <h4 className="vertical-timeline-element-subtitle">University of South Florida</h4>
+                <p>
+                  <b>GPA:</b> 3.96<br></br>
+                  <b>Competition</b>: Top 10 National, Stukent Mimic Pro's Digital Marketing Competition<br></br>
+                  <b>Nomination</b>: 2023 USF Student Employee of the Year Award
+                </p> 
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+          </div>
+        </div>
       </div>
     </div>
   );

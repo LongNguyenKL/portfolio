@@ -36,3 +36,62 @@
         color: rgb(39, 40, 34);
     }
 }
+
+.vertical-timeline-element-icon {
+    display: none !important; 
+}
+
+.timeline-split-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 175%;
+        left: 50%; 
+        width: 4px;
+        background-color: #e6e6e6; 
+    }
+}
+
+.work-experience-header {
+    text-align: right;
+    margin-right: 70px;
+    margin-bottom: 0px;
+}
+
+.education-header {
+    text-align: left;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+
+.timeline-column {
+    position: relative;
+    z-index: 2;
+    flex-basis: 50%; 
+    min-width: auto; 
+    min-height: auto;   
+}
+
+.timeline-column .vertical-timeline::before {
+    display: none; 
+}
+
+.timeline-column:first-child .vertical-timeline-element-content {
+    margin-right: 50px !important; 
+}
+
+.timeline-column:last-child .vertical-timeline-element-content {
+    margin-left: 50px !important; 
+}
