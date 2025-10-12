@@ -92,6 +92,34 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: center;
 }
 
+.form-items-container {
+  padding: 5% 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // 1. Targets the text in the standard TextField (Name, Email)
+  .MuiInputBase-input {
+    color: #000 !important;
+  }
+
+  // 2. Targets the text in the multiline TextField (Message)
+  .MuiInputBase-root textarea {
+    color: #000 !important;
+  }
+
+  // 👇 ADD THIS: Targets the text in the *outlined* variant, which is common
+  .MuiOutlinedInput-input {
+    color: #000 !important;
+  }
+
+  // 👇 ADD THIS: Targets the text area of the *outlined* multiline variant
+  .MuiOutlinedInput-root textarea {
+    color: #000 !important;
+  }
+}
+
 .light-mode {
   background-color: #f8f9fa;
 
