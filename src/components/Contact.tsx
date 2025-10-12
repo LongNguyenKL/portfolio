@@ -57,7 +57,7 @@ function Contact() {
 
   return (
     <div id="contact">
-      <div className="form-items-container">
+      <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
           <p>Interested in partnering with me for your data analytics opportunity? Let's discuss!</p>

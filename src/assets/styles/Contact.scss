@@ -9,7 +9,7 @@
 
   button {
     float: right;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #050f0b;
   }
 
@@ -19,8 +19,15 @@
   }
 
   fieldset {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
+
+  .MuiInputBase-input {
+    color: #050f0b; 
+  }
+
+  .MuiInputBase-root textarea {
+    color: #050f0b; 
 }
 
 label {
