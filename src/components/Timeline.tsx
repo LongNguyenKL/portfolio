@@ -12,7 +12,10 @@ function Timeline() {
     <div id="history">
       <div className="items-container">
         <h1>Background</h1>
-        <Button variant="contained" color="primary" href="https://docs.google.com/document/d/1gk1y3Y9p5vM0jv5bX1F2HjzZ4t8KXJH7/edit?usp=sharing&ouid=115820622492742329580&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '20px' }}>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          href="https://docs.google.com/document/d/1gk1y3Y9p5vM0jv5bX1F2HjzZ4t8KXJH7/edit?usp=sharing&ouid=115820622492742329580&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '20px' }}>
               Download Resume
         </Button>
         <div className="timeline-split-container" style={{maxHeight: "70vh"}}>

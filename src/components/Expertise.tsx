@@ -73,7 +73,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faRobot} size="3x"/>
                     <h3>AI Solutions</h3>
-                    <p>I drive value through data products, employing the latest AI models - from traditional Machine Learning to Deep Learning,
+                    <p>I deliver value through data products, employing the latest AI models - from traditional Machine Learning to Deep Learning,
                         NLP, and engineering LLM prompts. I create solutions, build custom models, and support research across various domains, 
                         <i> maintaining a commitment to continuously learn and integrate emerging technologies.</i></p>
                     <div className="flex-chips">

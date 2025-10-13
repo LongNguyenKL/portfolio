@@ -31,6 +31,17 @@
     color: white;
 }
 
+.button {
+   float: right;
+   background-color: rgb(255, 255, 255);
+   color: #050f0b;
+}
+
+.button:hover {
+    background-color: #5000ca;
+    color: white;
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
