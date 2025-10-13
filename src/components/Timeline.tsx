@@ -5,19 +5,40 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 import Button from '@mui/material/Button';
-
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
         <h1>Background</h1>
-        <Button 
-          variant="contained" 
-          color="primary" 
-          href="https://docs.google.com/document/d/1gk1y3Y9p5vM0jv5bX1F2HjzZ4t8KXJH7/edit?usp=sharing&ouid=115820622492742329580&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '20px' }}>
-              Download Resume
-        </Button>
+        <a
+          href="https://raw.githubusercontent.com/LongNguyenKL/portfolio/master/src/Resume_Long_GEN.docx"
+          download="Resume_Long_GEN.docx"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button 
+            variant="contained" 
+            color="primary" 
+            fullWidth
+            sx={{
+              backgroundColor: "white",
+              color: "#050f0b",
+              marginBottom: "30px",
+              height: "50px",
+
+              '&:hover': {
+                backgroundColor: "#5000ca",
+                color: "white",
+              }            
+            }}
+            endIcon={<FileDownloadIcon />}
+          >
+                Download Full Resume
+          </Button>
+        </a>
         <div className="timeline-split-container" style={{maxHeight: "70vh"}}>
           <div className="timeline-column">
             <h3 className="work-experience-header">Work Experience</h3>
