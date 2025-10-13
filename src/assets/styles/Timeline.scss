@@ -35,6 +35,21 @@
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
     }
+
+    .timeline-split-container {
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+        display: none
+    }
+
+    .education-header, .work-experience-header {
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+    }
+    }
 }
 
 .vertical-timeline-element-icon {
@@ -44,11 +59,10 @@
 .timeline-split-container {
     display: flex;
     justify-content: space-between;
-    gap: 30px; 
     width: 100%;
     position: relative;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
 
@@ -79,9 +93,10 @@
 .timeline-column {
     position: relative;
     z-index: 2;
-    flex-basis: 50%; 
-    min-width: auto; 
+    flex: 0 0 50%; 
+    min-width: 450px; 
     min-height: auto;   
+    padding: 0 15px
 }
 
 .timeline-column .vertical-timeline::before {
