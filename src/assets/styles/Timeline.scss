@@ -39,15 +39,27 @@
     .timeline-split-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &::after {
         display: none
     }
 
-    .education-header, .work-experience-header {
-        text-align: center;
-        margin: 0;
-        padding-left: 0;
+    .timeline-column {
+        flex: 1 0 100%; 
+        min-width: auto; 
+        padding: 0;
+        margin-bottom: 0; 
+    }
+
+    .work-experience-header {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .education-header {
+        text-align: right;
+        padding-right: 10px;
     }
     }
 }
