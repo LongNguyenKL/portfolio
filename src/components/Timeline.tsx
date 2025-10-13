@@ -9,7 +9,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 function Timeline() {
   return (
-    <div id="history">
+    <div id="background">
       <div className="items-container">
         <h1>Background</h1>
         <a
