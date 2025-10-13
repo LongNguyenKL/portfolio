@@ -83,7 +83,7 @@ function Timeline() {
             <h3 className="education-header">Education</h3>
             <VerticalTimeline layout="1-column-left">
               <VerticalTimelineElement className="vertical-timeline-element--education">
-                <h4 className="vertical-timeline-element-subtitle">Jan 2024 - December 2025</h4>
+                <h4 className="vertical-timeline-element-subtitle">Jan 2024 - Dec 2025</h4>
                 <h3 className="vertical-timeline-element-title">M.S. in Artificial Intelligence & Business Analytics</h3>
                 <h4 className="vertical-timeline-element-subtitle">University of South Florida</h4>
                 <p>
