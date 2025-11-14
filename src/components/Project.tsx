@@ -15,8 +15,8 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/LongNguyenKL/diversity-impact-on-education-project" target="_blank" rel="noreferrer"><img src={ai_agent_proj} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/LongNguyenKL/diversity-impact-on-education-project" target="_blank" rel="noreferrer"><h2>RAG-Enhanced AI Marketing Campaign Agent</h2></a>
+                <a href="https://github.com/LongNguyenKL/pixel-campaign-agent" target="_blank" rel="noreferrer"><img src={ai_agent_proj} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/LongNguyenKL/pixel-campaign-agent" target="_blank" rel="noreferrer"><h2>RAG-Enhanced AI Marketing Campaign Agent</h2></a>
                 <p> Engineered an AI-powered Campaign Agent capable of generating strategy tailored to small and mid-sized businesses. This project utilizied a Retrieval-Augmented Generation (RAG) system 
                         and prompt engineering (role-based and few-shot prompting) to to enhance Google Gemini LLM output generation, ensuring generated campaign strategies and
                         content achieve high quality across 8 scoring dimensions.
